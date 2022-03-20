@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,500");
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #353535;
+  margin: 0; }
+  body main {
+    flex: 1 1 auto; }
+
+.container {
+  padding: 4rem 2rem; }
+
+header, footer {
+  padding: 2rem; }
+
+ul, p, span, label, button {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"); }
+
+html {
+  font-size: 100%; }
+
+/*16px*/
+body {
+  font-family: 'Roboto Slab', 'system';
+  line-height: 1.25;
+  color: white; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', 'system';
+  font-weight: 500;
+  margin: 0; }
+
+h1 {
+  font-size: 4.209rem;
+  line-height: 4rem; }
+
+h2 {
+  font-size: 3.157rem; }
+
+h3 {
+  font-size: 2.369rem; }
+
+h4 {
+  font-size: 1.777rem; }
+
+h5 {
+  font-size: 1.333rem; }
+
+small, .text_small {
+  font-size: 0.75rem; }
