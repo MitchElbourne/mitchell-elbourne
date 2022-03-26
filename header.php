@@ -1,15 +1,3 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package mitchell-elbourne
- */
-
-?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -21,12 +9,30 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<?php
+    $navItems = ["Projects", "Contact me"]
+?>
 	<header>
 		<div class="logo">
             <span class="h2 code">&lt;M&gt;</span>      
         </div>
 
         <ul>
-            <li><span>&lt;01&gt;</span>Projects<span>&lt;/01&gt;</span></li>
+            <?php foreach ($navItems as $index => $item) { ?>
+                <li class="code">
+                    <?php
+                    // echo 
+                    // '<a href="/'. $item .'">
+                    //     <span class="caret">&lt;0'. $index .'></span>
+                    //     '. $item .'
+                    //     <span class="caret">&lt;/0'. $index .'&gt;</span>
+                    // </a>';
+                    echo 
+                    '<a href="/'. $item .'">
+                        <span class="caret">&lt;</span><span class="nav-icon">/</span>'.$item.'<span class="caret">&gt;</span>
+                    </a>';
+                    ?>  
+                </li>
+            <?php } ?>
         </ul>
 	</header>

@@ -1,0 +1,23 @@
+header {
+	.logo {
+
+	}
+	ul {
+		display: flex;
+		li {
+			a {
+				display: flex;
+				align-items: center;
+				position: relative;
+				margin: 0 0.5rem;
+				.caret {
+					margin: 0 0.25rem;
+					color: $green;
+				}
+				.nav-icon {
+					display: none;
+				}
+			}
+		}
+	}
+}

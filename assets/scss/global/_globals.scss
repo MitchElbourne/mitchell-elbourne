@@ -14,18 +14,7 @@ body {
 	}
 }
 
-.container {
-	width: 100%;
-	@media only screen and (min-width: 1000px) {
-		max-width: 1600px;
-		padding: 4rem 10rem;
-	}
-	@media only screen and (max-width: 999px) {
-		max-width: none;
-		padding: 2rem;
-	}
-}
-
+// Layout
 header, footer {
 	max-width: 1600px;
 	width: 100%;
@@ -38,12 +27,34 @@ header {
 	justify-content: space-between;
 }
 
+// Typography
 ul, p, span, label, button {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+	transform: 200ms linear;
+	&:hover, &:focus {
+		opacity: 0.75;
+	}
+}
+
+// Sections
+.container {
+	width: 100%;
+	@media only screen and (min-width: 1000px) {
+		max-width: 1600px;
+		padding: 4rem 10rem;
+	}
+	@media only screen and (max-width: 999px) {
+		max-width: none;
+		padding: 2rem;
+	}
+}
 
 section#splash {
 	margin-top: 10vh;

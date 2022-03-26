@@ -75,17 +75,6 @@ body {
   body main {
     flex: 1 1 auto; }
 
-.container {
-  width: 100%; }
-  @media only screen and (min-width: 1000px) {
-    .container {
-      max-width: 1600px;
-      padding: 4rem 10rem; } }
-  @media only screen and (max-width: 999px) {
-    .container {
-      max-width: none;
-      padding: 2rem; } }
-
 header, footer {
   max-width: 1600px;
   width: 100%;
@@ -101,9 +90,40 @@ ul, p, span, label, button {
   padding: 0;
   margin: 0; }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  transform: 200ms linear; }
+  a:hover, a:focus {
+    opacity: 0.75; }
+
+.container {
+  width: 100%; }
+  @media only screen and (min-width: 1000px) {
+    .container {
+      max-width: 1600px;
+      padding: 4rem 10rem; } }
+  @media only screen and (max-width: 999px) {
+    .container {
+      max-width: none;
+      padding: 2rem; } }
+
 section#splash {
   margin-top: 10vh; }
   section#splash h1 {
     margin: 1rem 0; }
   section#splash h3 {
     margin-top: 5rem; }
+
+header ul {
+  display: flex; }
+  header ul li a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 0.5rem; }
+    header ul li a .caret {
+      margin: 0 0.25rem;
+      color: #21e087; }
+    header ul li a .nav-icon {
+      display: none; }
