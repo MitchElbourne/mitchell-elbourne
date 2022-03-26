@@ -1,23 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,500");
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #353535;
-  margin: 0; }
-  body main {
-    flex: 1 1 auto; }
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro");
+.green {
+  color: #21e087; }
 
-.container {
-  padding: 4rem 2rem; }
-
-header, footer {
-  padding: 2rem; }
-
-ul, p, span, label, button {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
+.lightgreen {
+  color: #8bef9d; }
 
 @font-face {
   font-family: system;
@@ -26,9 +13,8 @@ ul, p, span, label, button {
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"); }
 
 html {
-  font-size: 100%; }
+  font-size: 18px; }
 
-/*16px*/
 body {
   font-family: 'Roboto Slab', 'system';
   line-height: 1.25;
@@ -39,21 +25,85 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
   margin: 0; }
 
-h1 {
+h1, .h1 {
   font-size: 4.209rem;
   line-height: 4rem; }
 
-h2 {
+h2, .h2 {
   font-size: 3.157rem; }
 
-h3 {
+h3, .h3 {
   font-size: 2.369rem; }
 
-h4 {
+h4, .h4 {
   font-size: 1.777rem; }
 
-h5 {
+h5, .h5 {
   font-size: 1.333rem; }
 
 small, .text_small {
   font-size: 0.75rem; }
+
+@media only screen and (max-width: 768px) {
+  h1, .h1 {
+    font-size: 3.157rem; }
+  h2, .h2 {
+    font-size: 2.369rem; }
+  h3, .h3 {
+    font-size: 1.777rem; }
+  h4, .h4 {
+    font-size: 1.333rem; }
+  h5, .h5 {
+    font-size: 1rem; } }
+
+.roboto {
+  font-family: 'Roboto Slab', 'system'; }
+
+.code {
+  font-family: 'Source Code Pro', 'system'; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #353535;
+  margin: 0; }
+  body main {
+    flex: 1 1 auto; }
+
+.container {
+  width: 100%; }
+  @media only screen and (min-width: 1000px) {
+    .container {
+      max-width: 1600px;
+      padding: 4rem 10rem; } }
+  @media only screen and (max-width: 999px) {
+    .container {
+      max-width: none;
+      padding: 2rem; } }
+
+header, footer {
+  max-width: 1600px;
+  width: 100%;
+  padding: 2rem; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+ul, p, span, label, button {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+section#splash {
+  margin-top: 10vh; }
+  section#splash h1 {
+    margin: 1rem 0; }
+  section#splash h3 {
+    margin-top: 5rem; }

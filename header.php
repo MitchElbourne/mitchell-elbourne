@@ -22,5 +22,11 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 	<header>
-		Header
+		<div class="logo">
+            <span class="h2 code">&lt;M&gt;</span>      
+        </div>
+
+        <ul>
+            <li><span>&lt;01&gt;</span>Projects<span>&lt;/01&gt;</span></li>
+        </ul>
 	</header>
