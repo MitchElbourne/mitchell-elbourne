@@ -12,7 +12,9 @@
 ?>
 
 	<footer>
-		Footer
+        <a class="logo" href="/">
+            <span class="h2 code">&lt;/M&gt;</span>      
+        </a>
 	</footer>
 
 <?php wp_footer(); ?>
