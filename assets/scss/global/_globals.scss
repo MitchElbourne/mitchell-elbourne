@@ -14,19 +14,6 @@ body {
 	}
 }
 
-// Layout
-header, footer {
-	max-width: 1600px;
-	width: 100%;
-	padding: 2rem;
-}
-
-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
 // Typography
 ul, p, span, label, button {
 	list-style: none;
@@ -56,13 +43,23 @@ a {
 	}
 }
 
-section#splash {
-	margin-top: 10vh;
-	h1 {
-		margin: 1rem 0;
+.separator {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin: 5vh 0;
+	span {
+		color: rgba(grey, 0.4);
+		font-weight: 500;
 	}
-	h3 {
-		margin-top: 5rem;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 90%;
+		left: 5%;
+		top: 0.7rem;
+		height: 0.1rem;
+		background-color: $lightgrey;
 	}
 }
-

@@ -75,16 +75,6 @@ body {
   body main {
     flex: 1 1 auto; }
 
-header, footer {
-  max-width: 1600px;
-  width: 100%;
-  padding: 2rem; }
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-
 ul, p, span, label, button {
   list-style: none;
   padding: 0;
@@ -108,22 +98,54 @@ a {
       max-width: none;
       padding: 2rem; } }
 
+.separator {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 5vh 0; }
+  .separator span {
+    color: rgba(128, 128, 128, 0.4);
+    font-weight: 500; }
+  .separator:before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 0.7rem;
+    height: 0.1rem;
+    background-color: rgba(128, 128, 128, 0.25); }
+
+header {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem; }
+  header .logo:hover, header .logo:focus {
+    color: #21e087; }
+  header ul {
+    display: flex; }
+    header ul li a {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin: 0 0.5rem; }
+      header ul li a .caret {
+        margin: 0 0.25rem;
+        color: #21e087; }
+      header ul li a .nav-icon {
+        display: none; }
+
+footer {
+  max-width: 1600px;
+  width: 100%;
+  padding: 2rem; }
+
 section#splash {
   margin-top: 10vh; }
   section#splash h1 {
     margin: 1rem 0; }
   section#splash h3 {
     margin-top: 5rem; }
-
-header ul {
-  display: flex; }
-  header ul li a {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 0 0.5rem; }
-    header ul li a .caret {
-      margin: 0 0.25rem;
-      color: #21e087; }
-    header ul li a .nav-icon {
-      display: none; }
