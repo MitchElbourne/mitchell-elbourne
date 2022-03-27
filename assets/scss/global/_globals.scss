@@ -1,5 +1,9 @@
 * {
 	box-sizing: border-box;
+	outline: none !important;
+	&:hover, &:focus {
+		outline: none !important;
+	}
 }
 
 body {
@@ -11,22 +15,6 @@ body {
 	margin: 0;
 	main {
 		flex: 1 1 auto;
-	}
-}
-
-// Typography
-ul, p, span, label, button {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-	transform: 200ms linear;
-	&:hover, &:focus {
-		opacity: 0.75;
 	}
 }
 
