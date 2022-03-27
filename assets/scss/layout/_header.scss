@@ -28,4 +28,12 @@ header {
 			}
 		}
 	}
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		text-align: center;
+		padding: 1rem;
+		ul {
+			margin-top: 1rem;
+		}
+	}
 }

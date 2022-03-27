@@ -5,7 +5,90 @@ section#splash {
 	h2 {
 		margin-top: 2rem;
 	}
-	h3 {
+	+ h3 {
 		margin: 10rem 0 1.5rem;
+	}
+}
+
+section#skills {
+	.area-title {
+		margin-top: 4rem;
+	}
+	ul.skills {
+		display: grid;
+		grid-template-columns: calc(33% - 1.33rem) calc(33% - 1.33rem) calc(33% - 1.33rem);
+		grid-column-gap: 2rem;
+		li {
+			position: relative;
+			margin-bottom: 1.5rem;
+			.progress {
+				position: absolute;
+				bottom: -0.5rem;
+				left: 0;
+				width: 100%;
+				display: inline-block;
+				height: 2px;
+				background-color: green;
+				z-index: 2;
+				&:after {
+					content: '';
+					position: absolute;
+					z-index: 1;
+					left: 0;
+					bottom: 0;
+					height: 2px;
+					background-color: $green;
+				}
+				&.w-10:after {width: 10%;}
+				&.w-20:after {width: 20%;}
+				&.w-30:after {width: 30%;}
+				&.w-40:after {width: 40%;}
+				&.w-50:after {width: 50%;}
+				&.w-60:after {width: 60%;}
+				&.w-70:after {width: 70%;}
+				&.w-80:after {width: 80%;}
+				&.w-90:after {width: 90%;}
+				&.w-100:after {width: 100%;}
+			}
+		}
+	}
+}
+
+section#contact-me {
+	form {
+		p {
+			width: 100%;
+			input[type="submit"] {
+				padding: 0.5rem 1rem;
+				border: none;
+				background-color: $green;
+				font-family: 'Source Code Pro', 'system';
+				&:hover, &:focus {
+					opacity: 0.75;
+					cursor: pointer;
+				}
+			}
+			label {
+				width: 100%;
+				font-size: 1rem;
+				text-transform: uppercase;
+				font-family: 'Source Code Pro', 'system';
+				color: $green;
+				span {
+					input {
+						width: 100%;
+						padding: 1rem 0.75rem;
+						margin-top: 0.5rem;
+						font-size: 1rem;
+						border: none;
+					}
+					textarea {
+						width: 100%;
+						resize: none;
+						padding: 1rem 0.75rem;
+					}
+				}
+			}
+		}
 	}
 }

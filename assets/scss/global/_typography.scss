@@ -18,7 +18,7 @@ body {
 h1, h2, h3, h4, h5 {
 	font-family: 'Roboto Slab', 'system';
 	font-weight: 500;
-	margin-bottom: 2rem;
+	margin: 0 0 2rem;
 }
 
 h1, .h1 {
@@ -59,7 +59,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-	h1, .h1 {font-size: 3.157rem;}
+	h1, .h1 {font-size: 2.8rem;}
 
 	h2, .h2 {font-size: 2.369rem;}
 
@@ -76,4 +76,8 @@ a {
 
 .code {
 	font-family: 'Source Code Pro', 'system';
+}
+
+span.wpcf7-not-valid-tip {
+	margin-top: 0.2rem;
 }

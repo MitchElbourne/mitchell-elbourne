@@ -18,6 +18,11 @@ body {
 	}
 }
 
+button {
+	border: none;
+	border-radius: 0;
+}
+
 // Sections
 .container {
 	width: 100%;
@@ -36,7 +41,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	margin: 5vh 0;
+	margin: 10vh 0;
+
 	span {
 		color: rgba(grey, 0.4);
 		font-weight: 500;
@@ -49,5 +55,8 @@ body {
 		top: 0.7rem;
 		height: 0.1rem;
 		background-color: $lightgrey;
+	}
+	@media only screen and (max-width: 768px) {
+		margin: 3rem 0;
 	}
 }

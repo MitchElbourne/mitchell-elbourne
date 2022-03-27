@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <?php
-        $navItems = ["Projects", "Contact me"];
+        $navItems = ["About Me", "Skills", "Contact Me"];
 
         function processUrl($url) {
             return str_replace(' ', '-', strtolower($url));
@@ -26,7 +26,7 @@
             <?php foreach ($navItems as $item) { ?>
                 <li class="code">
                     <?php echo 
-                    '<a href="/'. processUrl($item) .'">
+                    '<a href="#'. processUrl($item) .'">
                         <span class="caret">&lt;</span><span class="nav-icon">/</span>'. $item .'<span class="caret">&gt;</span>
                     </a>';
                     ?>  

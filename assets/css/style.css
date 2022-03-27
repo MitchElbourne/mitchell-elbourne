@@ -23,7 +23,7 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto Slab', 'system';
   font-weight: 500;
-  margin-bottom: 2rem; }
+  margin: 0 0 2rem; }
 
 h1, .h1 {
   font-size: 4.209rem;
@@ -63,7 +63,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   h1, .h1 {
-    font-size: 3.157rem; }
+    font-size: 2.8rem; }
   h2, .h2 {
     font-size: 2.369rem; }
   h3, .h3 {
@@ -78,6 +78,9 @@ a {
 
 .code {
   font-family: 'Source Code Pro', 'system'; }
+
+span.wpcf7-not-valid-tip {
+  margin-top: 0.2rem; }
 
 * {
   box-sizing: border-box;
@@ -95,6 +98,10 @@ body {
   body main {
     flex: 1 1 auto; }
 
+button {
+  border: none;
+  border-radius: 0; }
+
 .container {
   width: 100%; }
   @media only screen and (min-width: 1000px) {
@@ -111,7 +118,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin: 5vh 0; }
+  margin: 10vh 0; }
   .separator span {
     color: rgba(128, 128, 128, 0.4);
     font-weight: 500; }
@@ -123,6 +130,9 @@ body {
     top: 0.7rem;
     height: 0.1rem;
     background-color: rgba(128, 128, 128, 0.25); }
+  @media only screen and (max-width: 768px) {
+    .separator {
+      margin: 3rem 0; } }
 
 header {
   width: 100%;
@@ -145,11 +155,22 @@ header {
         color: #21e087; }
       header ul li a .nav-icon {
         display: none; }
+  @media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem; }
+      header ul {
+        margin-top: 1rem; } }
 
 footer {
   max-width: 1600px;
   width: 100%;
   padding: 2rem; }
+  @media only screen and (max-width: 768px) {
+    footer {
+      padding: 2rem;
+      text-align: center; } }
 
 section#splash h1 {
   margin: 1rem 0; }
@@ -157,5 +178,80 @@ section#splash h1 {
 section#splash h2 {
   margin-top: 2rem; }
 
-section#splash h3 {
+section#splash + h3 {
   margin: 10rem 0 1.5rem; }
+
+section#skills .area-title {
+  margin-top: 4rem; }
+
+section#skills ul.skills {
+  display: grid;
+  grid-template-columns: calc(33% - 1.33rem) calc(33% - 1.33rem) calc(33% - 1.33rem);
+  grid-column-gap: 2rem; }
+  section#skills ul.skills li {
+    position: relative;
+    margin-bottom: 1.5rem; }
+    section#skills ul.skills li .progress {
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      width: 100%;
+      display: inline-block;
+      height: 2px;
+      background-color: green;
+      z-index: 2; }
+      section#skills ul.skills li .progress:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #21e087; }
+      section#skills ul.skills li .progress.w-10:after {
+        width: 10%; }
+      section#skills ul.skills li .progress.w-20:after {
+        width: 20%; }
+      section#skills ul.skills li .progress.w-30:after {
+        width: 30%; }
+      section#skills ul.skills li .progress.w-40:after {
+        width: 40%; }
+      section#skills ul.skills li .progress.w-50:after {
+        width: 50%; }
+      section#skills ul.skills li .progress.w-60:after {
+        width: 60%; }
+      section#skills ul.skills li .progress.w-70:after {
+        width: 70%; }
+      section#skills ul.skills li .progress.w-80:after {
+        width: 80%; }
+      section#skills ul.skills li .progress.w-90:after {
+        width: 90%; }
+      section#skills ul.skills li .progress.w-100:after {
+        width: 100%; }
+
+section#contact-me form p {
+  width: 100%; }
+  section#contact-me form p input[type="submit"] {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #21e087;
+    font-family: 'Source Code Pro', 'system'; }
+    section#contact-me form p input[type="submit"]:hover, section#contact-me form p input[type="submit"]:focus {
+      opacity: 0.75;
+      cursor: pointer; }
+  section#contact-me form p label {
+    width: 100%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro', 'system';
+    color: #21e087; }
+    section#contact-me form p label span input {
+      width: 100%;
+      padding: 1rem 0.75rem;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      border: none; }
+    section#contact-me form p label span textarea {
+      width: 100%;
+      resize: none;
+      padding: 1rem 0.75rem; }
