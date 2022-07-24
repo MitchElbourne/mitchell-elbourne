@@ -9,4 +9,6 @@ function add_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
+add_theme_support('post-thumbnails');
+
 ?>
